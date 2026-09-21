@@ -1,0 +1,191 @@
+<DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width,initial-scale=1.0">
+     <title>Mommy Love Restauant Buea</title>
+     <style>
+         * {margins: 0; padding:0 box-sizing: border-box; font-family: 'segeo UI', Arial, sans-serif;}
+         body {line-height: 1.6; color: #333; scroll-behavior: smooth;}
+
+         header {background: #c0392b; color: white; padding: 15px 0; position: sticky; top: 0: z-index: 100;}
+         nav {width: 90%; margin: auto; display: flex; justify-content: space-between; align-items: center;}
+         nav h1 {font-size: 22px;}
+         nav u1 {list-style: none; display: flex; gap: 20px;}
+         nav a {color: white; text-decoration: none: none; font-weight: bold;}
+         nav:hover {text-decoration: underlined;}
+         .order-btn {background: #f1c40f; color: #000; padding:8px 15px; border-radius: 5px;}
+
+         .hero {background: linear-grdient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://imaage.unsplash.com/photo-1517248135467-4c7edcad34c4?w=1200') no-repeat center/cover; height: 450px; color: white; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center;}
+         .hero h2 {font-size: 50px; margin-bottom: 10px}
+         .her .btn {background: #f1c40f; color: #000; padding: 15px 30px; text-decoration: none; border-radius: 8px; font-weight: bold; margin-top: 20px; font-size: 18px;}
+
+         section {padding: 68px 10%;}
+         h2 {text-align: center; margin-bottom: 40px; color: #c0392b; font-size: 32px;}
+
+         /* Menu */
+         .menu-grid {display: grid; grd-template-columns: repeat(auto-fit, mimax(200px, 1fr)); gap: 15px;}
+         .menu-item {border: 1px solid #ddd; border-radius: 10px; padding: 15px; text-align}
+         .menu-item:hover {box-shadow: 0 4px 15px rgba(0,0,0,0.1);}
+         .menu-item img {width: 100%; height: 180px; object-fit: cover; border-radius: 8px;}
+         .price {font-weight: bold; color: #27ae60; font-size: 20px; margin-top: 10px;}
+         .add-btn {background: #c0392b; color: white; border: none; padding: 10px; width: 100%; border-radius: 5px; margin-top: 10px; cursor: pointer;}
+sss
+         /* Gallery */
+         .galery-grid {display: grid; grid-template-columns: repeat(auto-fit, mimax(200px, 1fr)); gap: 15px;}
+         .gallery-grid img {width: 100%; height: 200px; object-fit: cover; border-radius: 10px}
+
+         /* Testimonials */
+         #testimonials {background: #f4f4f4;}
+         .testimonial {background: white; padding: 20px; border-radius: 10px; margin: 10px; text-align: center;}
+
+         /* Contact */
+         .contact-wrapper {display: grid; grid-template-columns: 1fr 1fr; gap: 30px;}
+         form {display: flex; flex-direction: column; gap: 15px;}
+         input, textarae {padding: 12px; border: 1px solid #ccc; border-radius: 5px; cursor: pointer; font-weight: bold; font-size: 16px}
+         .info p {margin-bottom: 10px;}
+         .whatsapp {background: #25D366; text-decoration: none; color: white; padding: 12px; text-align: center; border-radius: 5px; display: block; font-weight: bold;}
+
+         iframe {width: 100%; height: 250px; border: 0; border-radius: 10px; margin-top: 20px;}
+
+         footer {background: #2c3e50; color: white; text-align: center; padding: 25px;}
+     .gallery-box {
+       display: grid;
+       grid-template-columns: repeat(3, 1fr);
+       gaP: 10px;
+       border: 2px solid #ccc;
+       padding: 10px;
+       border-radius: 10px
+    }
+
+    .gallery-box img {
+      width: 100%;
+      height: 200px
+      object-fit: cover;
+      border-radius: 8px;
+    }
+     </style>
+</head>
+<body>
+
+<header>
+    <nav>
+        <h1>Mommy Love Restaurant Buea</h1>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+             <li><a href="https://wa.me/237676958109"class="order-btn" target="_blank">Order Now</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section class="hero" id="home">
+    <h2>Welcome to Mommy Love Restaurant Buea</h2>
+    <p>Home Of Authentic Cameroonian & Continental Dishes</p>
+    <a href="https://wa.me/237676958109?text=Hello%20I%20want%20to%20order%20food" class="btn" target="_blank">Order on Whatsaap</a>
+</section>
+
+<section id="menu">
+    <h2>Our Menu</h2>
+    <div class="menu-card">
+        <div class="image-box">
+            <img src="jellof-rice.jpg" alt="Jellof Rice + Chicken"
+                 style="with: 100%; height: 250px; object-fit: cover; border-radius: 8px;">
+            <h3>Jellof Rice + Chcken</h3>
+            <p>Party Jellof with grilled chicken and salad</p>
+            <p class="price">2,500frs</p>
+            <button class="add-btn" onclick="alert('Added to cart! Whatsaap us to confirm')">Order Now</button>
+        </div>
+        <div class="image-box">
+           <img src="eru.jpg" alt="Eru"
+                style="with: 100%; height: 250px; object-fit: cover; border-radius: 8px;">
+           <h3>Eru + Water Fufu</h3>
+           <p>Traditional South West Delicacy</p>
+           <p class="price">3,000frs</p>
+           <button class="add-btn" onclick="alert('Added to cart! Whatsapp us to confirm')">Order Now</button>
+        </div>
+        <div class="image-box">
+        <img src="burger.jpg" alt="Burger"
+             style="with: 100%; height: 250px; object-fit: cover; border-radius: 8px;">
+        <h3>Burger + Chips</h3>
+        <p>Beef burger with fries and drink</p>
+        <p class="price">2,500frs</p>
+        <button class="add-btn" onclick="alert('Added to cart! Whatsapp us to confirm')">Order Now</button>
+        </div>
+        <div class="image-box">
+        <img src="grilled-fish.jpg" alt="Fish"
+             style="with: 100%; height: 250px; object-fit: cover; border-radius: 8px;">
+        <h3>Grilled Fish + Plantain</h3>
+        <p>Fresh fish grilled to perfection</p>
+        <p class="price">4,000frs</p>
+        <button class="add-btn" onclick="alert('Added to cart! Whatsapp us to confirm')">Order Now</button>
+        </div>
+    </div>
+</section>
+
+<section id="gallery">
+    <h2 style="text-align: center;>"Gallery</h2>
+
+
+    <div class="gallery-box">
+        <img src="me.jpg" alt="Restaurant">
+        <img src="jellof.jpg" alt="Jellof">
+        <img src="koki.jpg" alt="Koki">
+        <img src="achu.jpg" alt="Achu">
+        <img src="kati-kati.jpg" alt="Kati Kati">
+        <img src="eru.jpg" alt="Eru + Fufu">
+    </div>
+</section>
+
+<section id="about">
+    <h2>About Us</h2>
+    <p style="text-align: center; max-width: 800px; margin: auto;">
+        Mommy Love Restaurant Buea is serving fresh, tasty meals.
+        We specialize in cameroonian dishes like Eru, Kati kati, Achu and continental meals.
+        Clean environment, fast service, and food made with love as the name implies.
+    </p>
+</section>
+
+<setion id="Testimonials">
+    <h2>What Customers Say</h2>
+    <div class="menu-grid">
+        <div class="testimonial">
+            <p>"Best Jellof in Buea! Delivery was fast."</p>
+            <b>- Sarah M.</b>
+        </div>
+        <div class="testimonial">
+            <p>"The Eru tastes just like home. Highly recommend."</p>
+            <b>- Arrey E.</b>
+        </div>
+    </div>
+</section>
+
+<section id="contact">
+    <h2>Contact Us</h2>
+    <div class="contact-wrapper">
+        <form>
+            <input type="text" placeholder="Your Name" required>
+            <input type="tel" placeholder="Your Phone Number" required>
+            <textarea rows="5" placeholder="Your Order or Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+        <div class="info">
+            <h3>Get In Touch</h3>
+            <p>Mile 17, Buea, Southwest Rgion</p>
+            <p>676958109</p>
+            <p>Open: 8am - 10pm Daily</p>
+            <a href="https://wa.me/237676958109?text=Hello%20Mommy%20Love%20Restaurant%20Buea" clas="whatsapp" target="blank"> Chat on Whatsapp</a>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3979!2d9.237!3d4.155!2m3!1f0!2f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNMKwMDknMTguMCJOIDnCsDE0JzEzLjIiRQ!5e0!3m2!1scn!4v1234567890" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <p>&copy; 2026 Mommy Love Restaurant Buea. Follow us on Facebook & Instagram @MommyLoveBuea</p>
+</footer>
+
+</body>
+</html>
